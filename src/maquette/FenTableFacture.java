@@ -33,12 +33,12 @@ public class FenTableFacture extends javax.swing.JPanel {
         jLab_Supprimer = new javax.swing.JLabel();
         jLab_Retour = new javax.swing.JLabel();
         jLab_GestionFacture = new javax.swing.JLabel();
-        jScrollPane_Gestion = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         jButton_Total = new javax.swing.JButton();
         jTextField_Total = new javax.swing.JTextField();
         jButton_RechercherFacture = new javax.swing.JButton();
         jTextField_GestionFacture = new javax.swing.JTextField();
+        jScrollPane_Gestion = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
         jLab_fond = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -71,9 +71,18 @@ public class FenTableFacture extends javax.swing.JPanel {
         jLab_GestionFacture.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLab_GestionFacture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images.gestion/odt.png"))); // NOI18N
         jLab_GestionFacture.setText("Gestion des factures");
-        add(jLab_GestionFacture, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, -1, -1));
+        add(jLab_GestionFacture, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, -1, -1));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jButton_Total.setText("Total");
+        add(jButton_Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 370, 70, 40));
+        add(jTextField_Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 380, 80, 30));
+
+        jButton_RechercherFacture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images.gestion/chercheAssiste.png"))); // NOI18N
+        jButton_RechercherFacture.setText("Rechercher une facture");
+        add(jButton_RechercherFacture, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 370, -1, -1));
+        add(jTextField_GestionFacture, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 380, 80, 30));
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -84,18 +93,9 @@ public class FenTableFacture extends javax.swing.JPanel {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane_Gestion.setViewportView(jTable1);
+        jScrollPane_Gestion.setViewportView(jTable2);
 
-        add(jScrollPane_Gestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, -1, 90));
-
-        jButton_Total.setText("Total");
-        add(jButton_Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 390, 70, 40));
-        add(jTextField_Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 80, 30));
-
-        jButton_RechercherFacture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images.gestion/chercheAssiste.png"))); // NOI18N
-        jButton_RechercherFacture.setText("Rechercher une facture");
-        add(jButton_RechercherFacture, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 390, -1, -1));
-        add(jTextField_GestionFacture, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 400, 80, 30));
+        add(jScrollPane_Gestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 100, 470, 100));
 
         jLab_fond.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images.fond/fondGeneral.jpg"))); // NOI18N
         add(jLab_fond, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 780, 450));
@@ -113,7 +113,7 @@ public class FenTableFacture extends javax.swing.JPanel {
     private javax.swing.JLabel jLab_Supprimer;
     private javax.swing.JLabel jLab_fond;
     private javax.swing.JScrollPane jScrollPane_Gestion;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField_GestionFacture;
     private javax.swing.JTextField jTextField_Total;
     // End of variables declaration//GEN-END:variables

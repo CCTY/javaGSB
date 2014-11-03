@@ -34,36 +34,35 @@ public class FenFicheClient extends javax.swing.JFrame {
         jExporter = new javax.swing.JLabel();
         JRetMenuClients = new javax.swing.JLabel();
         jAjoutClient = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLab_code = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jLab_code1 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jLab_code2 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jLab_code3 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextField7 = new javax.swing.JTextField();
-        jScrollPane2 = new javax.swing.JScrollPane();
+        jPan_AjoutClient = new javax.swing.JPanel();
+        jLab = new javax.swing.JLabel();
+        jLab_Remarques = new javax.swing.JLabel();
+        jLab_Nom = new javax.swing.JLabel();
+        jLab_Code = new javax.swing.JLabel();
+        jLab_Prénom = new javax.swing.JLabel();
+        jLab_DateCreation = new javax.swing.JLabel();
+        jLab_Adresse = new javax.swing.JLabel();
+        jLab_Mobile = new javax.swing.JLabel();
+        jLab_TelFixe = new javax.swing.JLabel();
+        jLab_CodePostal = new javax.swing.JLabel();
+        jLab_Ville = new javax.swing.JLabel();
+        jLab_Email = new javax.swing.JLabel();
+        jLab_CarteFidélité = new javax.swing.JLabel();
+        jTxt_Adresse = new javax.swing.JTextField();
+        jTxtField_Prénom = new javax.swing.JTextField();
+        jTxtField_Nom = new javax.swing.JTextField();
+        jTxtField_Email = new javax.swing.JTextField();
+        jTxtField_DateCreation = new javax.swing.JTextField();
+        jTxtField_Code = new javax.swing.JTextField();
+        jTxtField_TelFixe = new javax.swing.JTextField();
+        jTxtField_CodePostal = new javax.swing.JTextField();
+        jTxtField_Ville = new javax.swing.JTextField();
+        jTxtField_Mobile = new javax.swing.JTextField();
+        jTxtField_Remarques = new javax.swing.JTextField();
+        jCheckBox_CarteFidelité = new javax.swing.JCheckBox();
+        jScrollPane = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
+        jLab_Fond = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -103,151 +102,150 @@ public class FenFicheClient extends javax.swing.JFrame {
         jAjoutClient.setText("Ajout d'un client");
         getContentPane().add(jAjoutClient, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 260, 70));
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 153), 2));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPan_AjoutClient.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 153), 2));
+        jPan_AjoutClient.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLab_code.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLab_code.setText("Carte fidélité");
-        jPanel2.add(jLab_code, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 60, -1, -1));
+        jLab.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLab.setText("Ajout, modification, suppression, consultation et impression");
+        jPan_AjoutClient.add(jLab, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 6, 550, -1));
 
-        jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        jLab_Remarques.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_Remarques.setText("Remarques");
+        jPan_AjoutClient.add(jLab_Remarques, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, -1, -1));
+
+        jLab_Nom.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_Nom.setText("Nom");
+        jPan_AjoutClient.add(jLab_Nom, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        jLab_Code.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_Code.setText("Code");
+        jPan_AjoutClient.add(jLab_Code, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        jLab_Prénom.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_Prénom.setText("Prénom");
+        jPan_AjoutClient.add(jLab_Prénom, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 100, -1, -1));
+
+        jLab_DateCreation.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_DateCreation.setText("Date création");
+        jPan_AjoutClient.add(jLab_DateCreation, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 60, -1, -1));
+
+        jLab_Adresse.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_Adresse.setText("Adresse");
+        jPan_AjoutClient.add(jLab_Adresse, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+
+        jLab_Mobile.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_Mobile.setText("Mobile");
+        jPan_AjoutClient.add(jLab_Mobile, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, -1, -1));
+
+        jLab_TelFixe.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_TelFixe.setText("Tél. fixe");
+        jPan_AjoutClient.add(jLab_TelFixe, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+
+        jLab_CodePostal.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_CodePostal.setText("Code postal");
+        jPan_AjoutClient.add(jLab_CodePostal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+
+        jLab_Ville.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_Ville.setText("Ville");
+        jPan_AjoutClient.add(jLab_Ville, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 180, -1, -1));
+
+        jLab_Email.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_Email.setText("Email");
+        jPan_AjoutClient.add(jLab_Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
+
+        jLab_CarteFidélité.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLab_CarteFidélité.setText("Carte fidélité");
+        jPan_AjoutClient.add(jLab_CarteFidélité, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 60, -1, -1));
+
+        jTxt_Adresse.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jTxt_Adresse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                jTxt_AdresseActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 690, 20));
+        jPan_AjoutClient.add(jTxt_Adresse, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 690, 20));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setText("Ajout, modification, suppression, consultation et impression");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 6, 550, -1));
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel3.setText("Remarques");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, -1, -1));
-
-        jTextField2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jTxtField_Prénom.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jTxtField_Prénom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                jTxtField_PrénomActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 100, 330, 20));
+        jPan_AjoutClient.add(jTxtField_Prénom, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 100, 330, 20));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel4.setText("Nom");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
-
-        jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        jTxtField_Nom.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jTxtField_Nom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                jTxtField_NomActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 220, 20));
+        jPan_AjoutClient.add(jTxtField_Nom, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 220, 20));
 
-        jLab_code1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLab_code1.setText("Code");
-        jPanel2.add(jLab_code1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
-
-        jTextField4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        jTxtField_Email.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jTxtField_Email.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                jTxtField_EmailActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 220, 20));
+        jPan_AjoutClient.add(jTxtField_Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 220, 20));
 
-        jLab_code2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLab_code2.setText("Prénom");
-        jPanel2.add(jLab_code2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 100, -1, -1));
-
-        jTextField5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        jTxtField_DateCreation.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jTxtField_DateCreation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                jTxtField_DateCreationActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 60, 140, 20));
+        jPan_AjoutClient.add(jTxtField_DateCreation, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 60, 140, 20));
 
-        jLab_code3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLab_code3.setText("Date création");
-        jPanel2.add(jLab_code3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 60, -1, -1));
-        jPanel2.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 60, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel5.setText("Adresse");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
-
-        jTextField6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        jTxtField_Code.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jTxtField_Code.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                jTxtField_CodeActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 220, 20));
+        jPan_AjoutClient.add(jTxtField_Code, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 220, 20));
 
-        jTextField8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        jTxtField_TelFixe.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jTxtField_TelFixe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                jTxtField_TelFixeActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 220, 220, 20));
+        jPan_AjoutClient.add(jTxtField_TelFixe, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 220, 220, 20));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel6.setText("Mobile");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel7.setText("Tél. fixe");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
-
-        jTextField9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        jTxtField_CodePostal.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jTxtField_CodePostal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                jTxtField_CodePostalActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 220, 20));
+        jPan_AjoutClient.add(jTxtField_CodePostal, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 220, 20));
 
-        jTextField10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
+        jTxtField_Ville.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jTxtField_Ville.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
+                jTxtField_VilleActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 180, 220, 20));
+        jPan_AjoutClient.add(jTxtField_Ville, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 180, 220, 20));
 
-        jTextField11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
-        jTextField11.addActionListener(new java.awt.event.ActionListener() {
+        jTxtField_Mobile.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        jTxtField_Mobile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField11ActionPerformed(evt);
+                jTxtField_MobileActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 220, 220, 20));
+        jPan_AjoutClient.add(jTxtField_Mobile, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 220, 220, 20));
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel8.setText("Code postal");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
-
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel9.setText("Ville");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 180, -1, -1));
-
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel10.setText("Email");
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 487, -1, 150));
-
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        jTxtField_Remarques.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                jTxtField_RemarquesActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, 680, 80));
+        jPan_AjoutClient.add(jTxtField_Remarques, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, 680, 80));
+        jPan_AjoutClient.add(jCheckBox_CarteFidelité, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 60, -1, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, 860, 410));
+        getContentPane().add(jPan_AjoutClient, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, 860, 410));
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -269,59 +267,59 @@ public class FenFicheClient extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane2.setViewportView(jTable2);
+        jScrollPane.setViewportView(jTable2);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 500, 860, 150));
+        getContentPane().add(jScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 500, 860, 150));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images.fond/fond.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1170, -1));
+        jLab_Fond.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images.fond/fond.jpg"))); // NOI18N
+        getContentPane().add(jLab_Fond, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1170, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jTxt_AdresseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxt_AdresseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_jTxt_AdresseActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jTxtField_PrénomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtField_PrénomActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_jTxtField_PrénomActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void jTxtField_NomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtField_NomActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_jTxtField_NomActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void jTxtField_EmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtField_EmailActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_jTxtField_EmailActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void jTxtField_DateCreationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtField_DateCreationActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_jTxtField_DateCreationActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void jTxtField_CodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtField_CodeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_jTxtField_CodeActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void jTxtField_TelFixeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtField_TelFixeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_jTxtField_TelFixeActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+    private void jTxtField_CodePostalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtField_CodePostalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_jTxtField_CodePostalActionPerformed
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
+    private void jTxtField_VilleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtField_VilleActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
+    }//GEN-LAST:event_jTxtField_VilleActionPerformed
 
-    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
+    private void jTxtField_MobileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtField_MobileActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField11ActionPerformed
+    }//GEN-LAST:event_jTxtField_MobileActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void jTxtField_RemarquesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtField_RemarquesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_jTxtField_RemarquesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -352,6 +350,7 @@ public class FenFicheClient extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new FenFicheClient().setVisible(true);
             }
@@ -364,37 +363,36 @@ public class FenFicheClient extends javax.swing.JFrame {
     private javax.swing.JLabel jApercuAvImp;
     private javax.swing.JLabel jBtnAnnuler;
     private javax.swing.JLabel jBtnSauvegarder;
-    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox_CarteFidelité;
     private javax.swing.JLabel jExporter;
     private javax.swing.JLabel jImprimer;
-    private javax.swing.JLabel jLab_code;
-    private javax.swing.JLabel jLab_code1;
-    private javax.swing.JLabel jLab_code2;
-    private javax.swing.JLabel jLab_code3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel jLab;
+    private javax.swing.JLabel jLab_Adresse;
+    private javax.swing.JLabel jLab_CarteFidélité;
+    private javax.swing.JLabel jLab_Code;
+    private javax.swing.JLabel jLab_CodePostal;
+    private javax.swing.JLabel jLab_DateCreation;
+    private javax.swing.JLabel jLab_Email;
+    private javax.swing.JLabel jLab_Fond;
+    private javax.swing.JLabel jLab_Mobile;
+    private javax.swing.JLabel jLab_Nom;
+    private javax.swing.JLabel jLab_Prénom;
+    private javax.swing.JLabel jLab_Remarques;
+    private javax.swing.JLabel jLab_TelFixe;
+    private javax.swing.JLabel jLab_Ville;
+    private javax.swing.JPanel jPan_AjoutClient;
+    private javax.swing.JScrollPane jScrollPane;
     private javax.swing.JTable jTable2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jTxtField_Code;
+    private javax.swing.JTextField jTxtField_CodePostal;
+    private javax.swing.JTextField jTxtField_DateCreation;
+    private javax.swing.JTextField jTxtField_Email;
+    private javax.swing.JTextField jTxtField_Mobile;
+    private javax.swing.JTextField jTxtField_Nom;
+    private javax.swing.JTextField jTxtField_Prénom;
+    private javax.swing.JTextField jTxtField_Remarques;
+    private javax.swing.JTextField jTxtField_TelFixe;
+    private javax.swing.JTextField jTxtField_Ville;
+    private javax.swing.JTextField jTxt_Adresse;
     // End of variables declaration//GEN-END:variables
 }

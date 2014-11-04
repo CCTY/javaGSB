@@ -37,7 +37,7 @@ public class FenStats extends javax.swing.JPanel {
         jLab_Facture.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLab_Facture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images.gestion/chart.png"))); // NOI18N
         jLab_Facture.setText("Factures");
-        add(jLab_Facture, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, -1, -1));
+        add(jLab_Facture, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
 
         jLab_Nombre.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLab_Nombre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images.gestion/ods.png"))); // NOI18N
